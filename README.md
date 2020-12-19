@@ -1,15 +1,15 @@
-這是一個分類居家者類型的程式
+# 這是一個分類居家者類型的程式
 
-    QUA_Classify.py 用來分類
+    - **QUA_Classify.py** 用來分類
 
-    QUA_Claim.py 用來統計各電信公司認領的數量
+    - **QUA_Claim.py** 用來統計各電信公司認領的數量
 
-1.用 python QUA_Classify.py Config.ini 來執行，可以設入排程
+1. 用 `python QUA_Classify.py Config.ini` 來執行，可以設入排程
 
-2.用 python QUA_Claim.py Config.ini 來執行，可以設入排程
+2. 用 `python QUA_Claim.py Config.ini` 來執行，可以設入排程
 
-Config 檔要有下列 Sections
-===================================================================
+## Config 檔要有下列 Sections
+```
     [PATH]
     saveto = E:\test #分類結果的本地儲存路徑
     quapath = /pheic/QUARANTINE #遠端居檢資料路徑
@@ -39,3 +39,4 @@ Config 檔要有下列 Sections
     FileCountISO = ^EFENCE_ISOLATION_{}_[0-9]{}.csv$
     be_punish = 監獄|看守所
     to_ISO = 轉.*衛政|轉.*隔離
+```
